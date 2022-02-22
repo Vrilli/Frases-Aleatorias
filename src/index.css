@@ -1,13 +1,88 @@
-body {
+* {
+  border: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: rgba(162, 91, 195, 0.829);
+  background: -moz-linear-gradient(left, rgba(204, 48, 170, 0.363) 0%, rgba(43, 92, 228, 0.52) 23%, rgb(39, 166, 189) 33%, rgba(138, 14, 221, 0.692) 70%, rgba(162, 11, 221, 0.582) 86%, rgba(204, 10, 123, 0.842) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(219, 19, 53)), color-stop(23%, rgba(90, 13, 49, 0.603)), color-stop(33%, rgba(108, 7, 117, 0.747)), color-stop(70%, rgb(7, 102, 146)), color-stop(86%, rgba(222, 14, 241, 0.76)), color-stop(100%, rgba(173, 10, 119, 0.719)));
+  background: -webkit-linear-gradient(left, rgba(219, 115, 18, 0.561) 0%, rgb(230, 54, 221) 23%, rgba(195, 36, 223, 0.315) 33%, rgba(192, 14, 38, 0.616) 70%, rgba(92, 3, 62, 0.753) 86%, rgba(10, 198, 223, 0.582) 100%);
+  background: -o-linear-gradient(left, rgba(51, 9, 85, 0.705) 0%, rgb(16, 101, 158) 23%, rgba(130, 20, 194, 0.671) 33%, rgba(13, 119, 206, 0.699) 70%, rgba(10, 131, 211, 0.555) 86%, rgba(230, 12, 85, 0.692) 100%);
+  background: -ms-linear-gradient(left, rgba(175, 14, 14, 0.541) 0%, rgb(11, 88, 151) 23%, rgba(167, 18, 197, 0.63) 33%, rgba(187, 9, 127, 0.575) 70%, rgba(102, 5, 182, 0.794) 86%, rgba(206, 9, 9, 0.548) 100%);
+  background: linear-gradient(to right, rgba(223, 10, 10, 0.493) 0%, rgba(206, 21, 212, 0.616) 23%, rgba(100, 7, 77, 0.753) 33%, rgba(158, 11, 202, 0.692) 70%, rgba(153, 5, 121, 0.5) 86%, rgba(107, 6, 189, 0.726) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#131313', GradientType=1 );
+
+  font-size: 24px;
+  font-family: 'Roboto';
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 80px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #f3400a;
+  transition: background .1s linear;
+}
+
+button:hover {
+  background-color: #e7991bea;
+}
+
+button:hover, button:focus {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  max-width: 260px;
+
+  background-color: rgba(255,255,255, .8);
+  padding: 10px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+  border-radius: 10px;
+}
+
+p {
+  font-size: 48px;
+  color: #ccc;
+  text-align: center;
+  animation: fade .2s;
+}
+
+span {
+  font-size: .75em;
+  color: #bbb;
+  color: #2c29f1;
+  text-transform: capitalize;
+}
+
+@media(min-width: 680px) {
+  .app {
+    padding-left: 160px ;
+    padding-right: 160px ;
+  }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
