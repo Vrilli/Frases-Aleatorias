@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# FRASES ALEATORIAS
+
+
+LINK: https://frases-aleatorias-nine.vercel.app/
+
+![image](https://user-images.githubusercontent.com/90112835/155048046-6657a33f-817c-4e39-b5b6-b0518a9000ac.png)
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
